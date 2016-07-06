@@ -11,11 +11,11 @@ import android.widget.Toast;
  * Created by poiuyt on 7/5/16.
  */
 
-public class CustomRecycleAdapter extends RecyclerView.Adapter<RecycleViewHolder> implements View.OnClickListener {
+public class CustomRecyclerAdapter extends RecyclerView.Adapter<RecycleViewHolder> implements View.OnClickListener {
     Context context;
     ClickEvent event;
 
-    public CustomRecycleAdapter(Context context, ClickEvent event) {
+    public CustomRecyclerAdapter(Context context, ClickEvent event) {
         this.event = event;
         this.context = context;
     }
