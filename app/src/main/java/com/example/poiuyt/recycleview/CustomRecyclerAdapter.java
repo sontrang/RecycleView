@@ -11,7 +11,7 @@ import android.widget.Toast;
  * Created by poiuyt on 7/5/16.
  */
 
-public class CustomRecyclerAdapter extends RecyclerView.Adapter<RecycleViewHolder> implements View.OnClickListener {
+public class CustomRecyclerAdapter extends RecyclerView.Adapter<RecyclerViewHolder> implements View.OnClickListener {
     Context context;
     ClickEvent event;
 
@@ -21,16 +21,16 @@ public class CustomRecyclerAdapter extends RecyclerView.Adapter<RecycleViewHolde
     }
 
     @Override
-    public RecycleViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public RecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item, parent, false);
-        RecycleViewHolder holder = new RecycleViewHolder(view);
+        RecyclerViewHolder holder = new RecyclerViewHolder(view);
         holder.itemView.setOnClickListener(this);
 //        holder.left.setOnClickListener(this);
         return holder;
     }
 
     @Override
-    public void onBindViewHolder(RecycleViewHolder holder, int position) {
+    public void onBindViewHolder(RecyclerViewHolder holder, int position) {
 //        holder.left.setTag(position);
         holder.itemView.setTag(position);
     }
